@@ -106,7 +106,7 @@ To get a local copy up and running follow these simple example steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/M-Elsaied/collaboration_oriject.git
+   git clone https://github.com/M-Elsaied/collaboration_project.git
    ```
 3. Install NPM packages
    ```sh
@@ -114,7 +114,7 @@ To get a local copy up and running follow these simple example steps.
    ```
 4. Run file you need, e.g.
    ```JS
-   python3 Main_BK.py;
+   python3 ROI/python/Main_BK.py;
    ```
 
 
