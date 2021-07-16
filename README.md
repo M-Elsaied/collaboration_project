@@ -34,7 +34,7 @@
   <h3 align="center">Collaboration Project</h3>
 
   <p align="center">
-    An awesome README foe station prediction project 
+    An awesome README for station prediction project 
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
