@@ -69,4 +69,4 @@ for i in range(50): #50
                                                              #Prc is a mtarix of percentiles arranged as follows (1-d: raws represent percentiles from 0.05 to 0.95; 2-d: columns represent different WQ variables; and 3-d: represents the 50 catchments
                     Y_Prc[i,m,ii]=Prc[ii,i,m]
                     m=m+1              
-            
+print(Y_Prc)
