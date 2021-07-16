@@ -80,56 +80,41 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+The ROI should work on the matrix of catchments’ characteristics X, The matrix X is 50 x 13, or 13 x 50, the 50 rows represent each of the 50 catchments we have and the 13 columns represent the 13 characteristics we have (e.g. catchment area, amount of fertilisers applied, WWTPs’ total capacity). 
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
+The main goal of this study is to estimate WQ percentiles at ungauged catchment/watershed. We proposed a regional statistical approach that consists of two steps. The first step is the region of influence (ROI), which is applied to identify the similar gauged catchments for a target ungauged catchment.  The second step is the nonparametric TS multiple regression.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have have contributed to expanding this template!
+To evaluate the regional models proposed We applied cross-validation approach by assuming each of the 50 catchments we have as ungauged catchment (target catchment) and use the remaining 49 catchments to estimate the WQ percentile at this target catchment.
 
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+Thus, in each of these 50 steps of the cross-validation, the ROI consists of calculating the Euclidean distance between the assumed ungauged catchment and the remaining 49 catchments, sort them in ascending order, and apply two criteria to identify the size of catchments to include as similar to be used in the following step of the model.
 
 ### Built With
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
+* [Python](https://python.org)
+* [Matlab](https://mathworks.com)
 
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/M-Elsaied/collaboration_oriject.git
    ```
 3. Install NPM packages
    ```sh
-   npm install
+   pip install -r requirements.txt
    ```
-4. Enter your API in `config.js`
+4. Run file you need, e.g.
    ```JS
-   const API_KEY = 'ENTER YOUR API';
+   python3 Main_BK.py;
    ```
 
 
@@ -146,7 +131,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/M-Elsaied/collaboration_project/issues) for a list of proposed features (and known issues).
 
 
 
@@ -186,12 +171,6 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 * [Choose an Open Source License](https://choosealicense.com)
 * [GitHub Pages](https://pages.github.com)
 * [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
 
 
 
@@ -215,13 +194,4 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 
 
-# collaboration_project
 
-The ROI should work on the matrix of catchments’ characteristics X, The matrix X is 50 x 13, or 13 x 50, the 50 rows represent each of the 50 catchments we have and the 13 columns represent the 13 characteristics we have (e.g. catchment area, amount of fertilisers applied, WWTPs’ total capacity). 
-
-
-The main goal of this study is to estimate WQ percentiles at ungauged catchment/watershed. We proposed a regional statistical approach that consists of two steps. The first step is the region of influence (ROI), which is applied to identify the similar gauged catchments for a target ungauged catchment.  The second step is the nonparametric TS multiple regression.
-
-To evaluate the regional models proposed We applied cross-validation approach by assuming each of the 50 catchments we have as ungauged catchment (target catchment) and use the remaining 49 catchments to estimate the WQ percentile at this target catchment.
-
-Thus, in each of these 50 steps of the cross-validation, the ROI consists of calculating the Euclidean distance between the assumed ungauged catchment and the remaining 49 catchments, sort them in ascending order, and apply two criteria to identify the size of catchments to include as similar to be used in the following step of the model.
