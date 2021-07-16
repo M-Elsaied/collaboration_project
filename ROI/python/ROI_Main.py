@@ -96,7 +96,7 @@ Z=zscore(XX,13)
 
 for i in range(50):
     locals()['ROI_'+str(i+1)]=ROI_Main(i,Z)
-    
+    print(ROI_Main(i,Z))
 
 #ROI_1=ROI_Main(0,Z)
 #ROI_2=ROI_Main(1,Z)
